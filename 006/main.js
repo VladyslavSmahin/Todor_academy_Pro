@@ -55,4 +55,4 @@ comboFunction = (inputValue) => {
     alert(typeof (parseInt(inputValue)) + " " + inputValue);
     alert(typeof Boolean(inputValue) + " " + inputValue);
 }
-comboFunction(1.2)
+comboFunction(1.2);
