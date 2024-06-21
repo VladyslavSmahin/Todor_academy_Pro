@@ -15,10 +15,21 @@ null == '';           // false
 "4px" - 3;            // NaN
 0 || "0" && 1;        // 1
 //////////////
-numString = '42'
+/*numString = '42'
 numInt = parseInt(numString)
 numFloat = parseFloat(numString)
 alert(numString + "" + typeof numString)
 alert(numInt + "" + typeof numInt)
-alert(numFloat + "" + typeof numFloat)
+alert(numFloat + "" + typeof numFloat)*/
 /////////////
+
+isLoggedOut  = false
+loggedInString = isLoggedOut.toString()
+loggedInString2 = String(isLoggedOut)
+loggedInString3 = isLoggedOut + ''
+loggedInString4 = JSON.stringify(isLoggedOut)
+alert(loggedInString + " " + typeof loggedInString)
+alert(loggedInString2 + " " + typeof loggedInString)
+alert(loggedInString3 + " " + typeof loggedInString)
+alert(loggedInString4 + " " + typeof loggedInString)
+///////////
