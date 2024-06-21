@@ -15,29 +15,34 @@ null == '';           // false
 "4px" - 3;            // NaN
 0 || "0" && 1;        // 1
 //////////////
-/*numString = '42'
-numInt = parseInt(numString)
-numFloat = parseFloat(numString)
-alert(numString + "" + typeof numString)
-alert(numInt + "" + typeof numInt)
-alert(numFloat + "" + typeof numFloat)*/
+numString = '42';
+numInt = parseInt(numString);
+numFloat = parseFloat(numString);
+alert(numString + " " + typeof numString);
+alert(numInt + " " + typeof numInt);
+alert(numFloat + " " + typeof numFloat);
 /////////////
 
-/*isLoggedOut  = false
-loggedInString = isLoggedOut.toString()
-loggedInString2 = String(isLoggedOut)
-loggedInString3 = isLoggedOut + ''
-loggedInString4 = JSON.stringify(isLoggedOut)
-alert(loggedInString + " " + typeof loggedInString)
-alert(loggedInString2 + " " + typeof loggedInString)
-alert(loggedInString3 + " " + typeof loggedInString)
-alert(loggedInString4 + " " + typeof loggedInString)*/
+isLoggedOut  = false;
+loggedInString = isLoggedOut.toString();
+loggedInString2 = String(isLoggedOut);
+loggedInString3 = isLoggedOut + '';
+loggedInString4 = JSON.stringify(isLoggedOut);
+alert(loggedInString + " " + typeof loggedInString);
+alert(loggedInString2 + " " + typeof loggedInString);
+alert(loggedInString3 + " " + typeof loggedInString);
+alert(loggedInString4 + " " + typeof loggedInString);
 ///////////
-function StringNumber (futureAge){
-    let ageString = "25";
-    let yearsToAdd = 10;
-    futureAge = +ageString + yearsToAdd;
+function StringNumber (ageString, yearsToAdd){
+    futureAge = +ageString + +yearsToAdd;
     return futureAge;
 }
-let result = StringNumber();
-alert(result)
+let result = StringNumber('25', 10);
+alert(result + " " + typeof result);
+///////////////
+BooleanFunction = (inputValue) =>{
+    let isTrue =  Boolean(inputValue);
+    return isTrue;
+}
+let result2 = BooleanFunction("true");
+alert(result2 + " " + typeof result2);
