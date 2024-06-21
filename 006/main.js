@@ -6,7 +6,7 @@ true + false;         // 1
 2 && 7;               // 7
 null + 1;             // 1
 undefined + 1;        // NaN
-"five" + + "two";     // 'fiveNaN'
+"five" + +"two";     // 'fiveNaN'
 'true' == true;       // false
 false == 'false';     // false
 null == '';           // false
@@ -15,14 +15,14 @@ null == '';           // false
 "4px" - 3;            // NaN
 0 || "0" && 1;        // 1
 //////////////
-numString = '42';
+/*numString = '42';
 numInt = parseInt(numString);
 numFloat = parseFloat(numString);
 alert(numString + " " + typeof numString);
 alert(numInt + " " + typeof numInt);
-alert(numFloat + " " + typeof numFloat);
+alert(numFloat + " " + typeof numFloat);*/
 /////////////
-
+/*
 isLoggedOut  = false;
 loggedInString = isLoggedOut.toString();
 loggedInString2 = String(isLoggedOut);
@@ -31,18 +31,28 @@ loggedInString4 = JSON.stringify(isLoggedOut);
 alert(loggedInString + " " + typeof loggedInString);
 alert(loggedInString2 + " " + typeof loggedInString);
 alert(loggedInString3 + " " + typeof loggedInString);
-alert(loggedInString4 + " " + typeof loggedInString);
+alert(loggedInString4 + " " + typeof loggedInString);*/
 ///////////
-function StringNumber (ageString, yearsToAdd){
+/*function StringNumber (ageString, yearsToAdd){
     futureAge = +ageString + +yearsToAdd;
     return futureAge;
 }
 let result = StringNumber('25', 10);
-alert(result + " " + typeof result);
+alert(result + " " + typeof result);*/
 ///////////////
-BooleanFunction = (inputValue) =>{
+/*
+booleanFunction = (inputValue) =>{
     let isTrue =  Boolean(inputValue);
     return isTrue;
 }
 let result2 = BooleanFunction("true");
 alert(result2 + " " + typeof result2);
+*/
+//////////
+comboFunction = (inputValue) => {
+    alert(typeof inputValue);
+    alert(typeof (inputValue + "") + " " + inputValue);
+    alert(typeof (parseInt(inputValue)) + " " + inputValue);
+    alert(typeof Boolean(inputValue) + " " + inputValue);
+}
+comboFunction(1.2)
