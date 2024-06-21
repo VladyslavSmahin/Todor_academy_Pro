@@ -14,3 +14,11 @@ null == '';           // false
 "4" - 3;              // 1
 "4px" - 3;            // NaN
 0 || "0" && 1;        // 1
+//////////////
+numString = '42'
+numInt = parseInt(numString)
+numFloat = parseFloat(numString)
+alert(numString + "" + typeof numString)
+alert(numInt + "" + typeof numInt)
+alert(numFloat + "" + typeof numFloat)
+/////////////
