@@ -23,7 +23,7 @@ alert(numInt + "" + typeof numInt)
 alert(numFloat + "" + typeof numFloat)*/
 /////////////
 
-isLoggedOut  = false
+/*isLoggedOut  = false
 loggedInString = isLoggedOut.toString()
 loggedInString2 = String(isLoggedOut)
 loggedInString3 = isLoggedOut + ''
@@ -31,5 +31,13 @@ loggedInString4 = JSON.stringify(isLoggedOut)
 alert(loggedInString + " " + typeof loggedInString)
 alert(loggedInString2 + " " + typeof loggedInString)
 alert(loggedInString3 + " " + typeof loggedInString)
-alert(loggedInString4 + " " + typeof loggedInString)
+alert(loggedInString4 + " " + typeof loggedInString)*/
 ///////////
+function StringNumber (futureAge){
+    let ageString = "25";
+    let yearsToAdd = 10;
+    futureAge = +ageString + yearsToAdd;
+    return futureAge;
+}
+let result = StringNumber();
+alert(result)
