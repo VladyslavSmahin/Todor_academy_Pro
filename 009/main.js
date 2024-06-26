@@ -24,3 +24,12 @@ sendMessage('dattebayo', printMessage);
 sendMessage('    1', printMessage);
 //////
 
+const square = function (num) {
+    return num*num;
+}
+console.log(
+    square(1),
+    square(3),
+    square(6),
+);
+/////
