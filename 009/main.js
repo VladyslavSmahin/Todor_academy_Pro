@@ -33,3 +33,12 @@ console.log(
     square(6),
 );
 /////
+
+function isNum (a) {
+    (typeof a === 'number' && !isNaN(a)) ? console.log(`${a} is a number`) : console.log(`${a} isn't a number`)
+}
+isNum('a');
+isNum(1);
+isNum(0);
+isNum(null);
+isNum(NaN);
