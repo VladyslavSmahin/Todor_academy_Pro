@@ -11,7 +11,6 @@ export function task_2() {
             return counter
         }
         getCountUp()
-        console.log(counter)
         getCountUp()
         getCountDown()
         return{
