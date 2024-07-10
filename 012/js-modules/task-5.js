@@ -1,16 +1,11 @@
 export function task_5 () {
-    function multiplyBy(num) {
-        function calculatedProduct(arg) {
-            console.log( num * arg)
-        }
-
-        calculatedProduct()
-        return{
-            calculatedProduct
+    function multiplyBy(a) {
+         return function calculatedProduct(b) {
+            return  a * b;
         }
     }
     multiplyBy()
     let a = multiplyBy(20);
-    a.calculatedProduct(10);
-
+    console.log(a(2));
+    console.log(a(5));
 }

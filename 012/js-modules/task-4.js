@@ -1,12 +1,16 @@
 export function task_4() {
     function generateUniqueId() {
-    let id = ''
+    let id = '';
         function getRandomId() {
-        console.log(id = Math.random())
+        let newId = Math.random();
+        return id = newId;
         }
-        getRandomId()
-        getRandomId()
-        console.log(id)
+        getRandomId();
+        console.log(id);
+        getRandomId();
+        console.log(id);
+        getRandomId();
+        console.log(id);
     }
-    generateUniqueId()
+    generateUniqueId();
 }

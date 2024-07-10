@@ -1,21 +1,15 @@
 export function task_3() {
-    function createLogger(createLoggerString) {
-        let str = '';
-        if (createLoggerString === undefined){
-            createLoggerString = ""
+    function createLogger(loggerString) {
+        let logString = loggerString || '';
+        return function (newLoggerString) {
+            if (loggerString) {
+                loggerString += '';
+            }
+            return logString = `${logString} ${newLoggerString}`;
         }
-
-        function logger(loggerString) {
-            console.log(str = str + " " + createLoggerString + " " + loggerString);
-        }
-
-        logger(111);
-        console.log(str);
-        logger(2);
-        console.log(str);
-        logger(1);
-        logger('wow');
     }
 
-    createLogger(12)
+    let string = createLogger('hi');
+    console.log(string('Vlad'));
+    console.log(string('Zhekos'));
 }

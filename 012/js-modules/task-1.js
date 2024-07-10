@@ -1,13 +1,12 @@
 export function task_1 (){
-    function calculateDiscount(price) {
-        let discount = 20;
-
-        function getPriceAfterDiscount(price) {
-            console.log(price - price * discount * 0.01);
+    function calculateDiscount(discount) {
+        let discountSum = null;
+        return function getPriceAfterDiscount(price) {
+            return price - price * discount * 0.01;
         }
-        getPriceAfterDiscount(price);
     }
+    let discount20 = calculateDiscount(20);
 
-    calculateDiscount(200);
+    console.log(discount20(200));
 
 }
