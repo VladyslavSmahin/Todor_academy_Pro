@@ -11,4 +11,9 @@ export function task_1() {
         enumerable: true,
     });
     console.log(Object.getOwnPropertyDescriptor(person, 'gender'));
+    person.name = 'Vlados';
+    console.log(person);
+    console.log( person.propertyIsEnumerable( 'gender'));
+    delete person.age;
+    console.log(person);
 }
