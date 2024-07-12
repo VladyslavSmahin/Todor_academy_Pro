@@ -12,6 +12,6 @@ export function task_3() {
     console.log(deepCopy);
     Object.seal(deepCopy);
     console.log(Object.isSealed('deepCopy'));
-    delete deepCopy.year;
+    ///delete deepCopy.year;
     console.log(deepCopy); /// TypeError: Cannot delete property 'year'
 }
