@@ -7,13 +7,13 @@ export function task_1_2() {
             this.gender = gender;
         }
         greet(){
-            return console.log(`Hi ${this.name} ${this.surname}! I'm ${this.age}` )
+            return `Hi ${this.name} ${this.surname}! I'm ${this.age}`;
         }
     }
     const person1 = new Person('Victor','Tsoi','forever alive', 'man');
     const person2 = new Person('Thor','Odinson', '1500', 'man');
-    person1.greet();
-    person2.greet();
+    console.log(person1.greet());
+    console.log(person2.greet());
 
     class Student extends Person{
         constructor(name, surname, age, gender, studentID) {
@@ -21,9 +21,9 @@ export function task_1_2() {
             this.studentId = studentID;
         }
         greet() {
-            return console.log(`Hi ${this.name} ${this.studentId}`);
+          return `Hi ${this.name} ${this.studentId}`;
         }
     }
     const student1 = new Student('Vovchik','Bat`kovich','21', 'man', '001');
-    student1.greet();
+    console.log(student1.greet());
 }
