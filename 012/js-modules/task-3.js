@@ -1,10 +1,7 @@
 export function task_3() {
-    function createLogger(loggerString) {
-        let logString = loggerString || '';
+    function createLogger(loggerString = '') {
+        let logString = loggerString
         return function (newLoggerString) {
-            if (loggerString) {
-                loggerString += '';
-            }
             return logString = `${logString} ${newLoggerString}`;
         }
     }

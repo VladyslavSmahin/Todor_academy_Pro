@@ -1,16 +1,15 @@
 export function task_4() {
-    function generateUniqueId() {
-    let id = '';
-        function getRandomId() {
-        let newId = Math.random();
-        return id = newId;
-        }
-        getRandomId();
-        console.log(id);
-        getRandomId();
-        console.log(id);
-        getRandomId();
-        console.log(id);
-    }
-    generateUniqueId();
+    const generateUniqueId = (function () {
+        let lastId = 0;
+         return function getRandomId() {
+            lastId += 1;
+            return `id-${lastId}`;
+        };
+    })();
+    const id = generateUniqueId();
+    const id2 = generateUniqueId();
+    const nextId = generateUniqueId();
+    console.log(id);
+    console.log(id2);
+    console.log(nextId);
 }
