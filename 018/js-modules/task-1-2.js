@@ -1,5 +1,5 @@
-export function task_1() {
-    class Person {
+export function task_1_2() {
+     class Person {
         constructor(name, surname, age, gender) {
             this.name = name;
             this.surname = surname;
@@ -14,4 +14,16 @@ export function task_1() {
     const person2 = new Person('Thor','Odinson', '1500', 'man');
     person1.greet();
     person2.greet();
+
+    class Student extends Person{
+        constructor(name, surname, age, gender, studentID) {
+            super(name, surname, age, gender);
+            this.studentId = studentID;
+        }
+        greet() {
+            return console.log(`Hi ${this.name} ${this.studentId}`);
+        }
+    }
+    const student1 = new Student('Vovchik','Bat`kovich','21', 'man', '001');
+    student1.greet();
 }
