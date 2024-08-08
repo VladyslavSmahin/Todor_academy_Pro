@@ -1,25 +1,39 @@
 export function task_1() {
-    const Animal = {
-        constructor: function (name) {
+    class Animal  {
+        constructor  (name) {
             this.name = name;
             return this;
-        },
-        sound: function (){
+        }
+        sound (){
             return 'sound';
-        },
-        makeSound: function (){
+        }
+        makeSound(){
             return this.sound()
         }
     }
-    const dog = Object.create(Animal).constructor('Dana');
+    const dog = new Animal('Dana');
     dog.sound = function (){
         return 'woof';
     };
-    const cat = Object.create(Animal).constructor('Boris');
+    const cat = new Animal('Boris');
     cat.sound = function (){
         return 'meow';
     };
-    console.log(dog.sound());
-    console.log(cat.sound());
+    class Dog extends Animal{
+        sound() {
+            return 'woof';
+        }
+    }
+    class Cat extends Animal{
+        sound() {
+            return 'meow';
+        }
+    }
+    const catBoris = new Cat('Boris');
+    const dogDana = new Dog('Dana');
+    console.log(dog.makeSound());
     console.log(cat.makeSound());
+    console.log(dogDana.makeSound());
+    console.log(catBoris.makeSound())
+
 }
