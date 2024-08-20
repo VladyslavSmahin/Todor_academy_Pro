@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <button style="border-radius: 10px" onclick="toShowImg()">Пс,парень...</button>
+</div>
+<div id="myImgContainer" style="text-align: center;
+                padding-top: 50px;
+                opacity: 0;
+                transition: opacity 0.5s ease; ">
+    <img src="images/images.jfif" alt="img">
+</div>
+<div id="myImgContainer2" style="text-align: center;
+                opacity: 0;
+                transition: opacity 0.5s ease;">
+    <img src="images/img2.jpg" alt="img"
+         style="max-width: 500px">
+</div>
+<p id="myText" style="position: absolute;
+                top: 300px;
+                left: 38%;
+                color: white;
+                font-size: 30px;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+">И удачного полета !</p>
+<script>
+    function calculateSavings(salary, expenses) {
+        return `Savings this month amounted to ${salary - expenses}$`
+    }
+
+    console.log(calculateSavings(1000, 600))
+</script>
+<script src="main.js"></script>
+</body>
+</html>
