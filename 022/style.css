@@ -4,6 +4,37 @@ html {
   background-color: #000409;
   align-content: center;
   position: relative;
+  scroll-behavior: smooth;
+}
+html a {
+  color: white;
+  text-decoration: none;
+}
+html header {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+html header nav {
+  width: 100%;
+}
+html header nav ul {
+  list-style: none;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+}
+html header nav ul li {
+  margin: 10px 30px;
+  padding: 5px;
+  border: white 1px solid;
+  border-radius: 10px;
+}
+html body {
+  padding-top: 50px;
 }
 html body .NasaContent {
   text-align: center;
@@ -58,10 +89,19 @@ html body .canvasSection .canvasContainer #myCanvas {
   max-width: 100%;
 }
 html body .myGeolocationSection {
-  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+html body .myGeolocationSection #getLocation {
+  width: 15%;
+  border-color: white;
+  border-radius: 10px;
 }
 html body .myGeolocationSection #map {
-  height: 400px;
+  padding-bottom: 100px;
   width: 100%;
 }
 

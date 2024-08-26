@@ -7,10 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-<section class="NasaContent">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Nasa news</a></li>
+            <li><a href="#section2">Music Player</a></li>
+            <li><a href="#section3">Canvas animation</a></li>
+            <li><a href="#section4">My location</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="section1" class="NasaContent">
     <h1>NASA Image of the Day</h1>
     <div id="content">
         <h2 id="title"></h2>
@@ -21,7 +30,7 @@
         <p id="explanation"></p>
     </div>
 </section>
-<section class="mainSection">
+<section id="section2" class="mainSection">
     <div>
         <audio>
             <source src="audio/Bullet%20For%20My%20Valentine%20-%20All%20These%20Things%20I%20Hate.mp3"  type="audio/mpeg">
@@ -53,19 +62,19 @@
         </div>
     </div>
 </section>
-<section class="canvasSection">
-    <div class="canvasContainer">
+<section  class="canvasSection">
+    <div id="section3" class="canvasContainer">
         <canvas id="myCanvas"></canvas>
     </div>
 </section>
-<section class="myGeolocationSection">
+<section id="section4" class="myGeolocationSection">
     <button id="getLocation">Get My Location</button>
-    <p id="coordinates"></p>
+    <a id="locationDisplay" target="_blank" title="click here" >Location here</a>
     <div id="map"></div>
 </section>
 <script src="main.js"></script>
 <script src="js/NASA.js"></script>
-<script src="canvasElement.js"></script>
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/canvasElement.js"></script>
+<script src="js/geolocation.js"></script>
 </body>
 </html>
