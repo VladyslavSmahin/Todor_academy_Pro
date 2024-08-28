@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Matrix';
+  src: url("fonts/matrix.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Matrix', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: #03A062;
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      h1,h3{
+        background-color: rgba(0,0,0,0.7);
+      }
+      .popupToSelectNum{
+        form{
+          input{
+            background-color: rgba(0,0,0,1);
+            color: #03A062;
+            border-color: #03A062;
+          }
+        }
+      }
+    }
+    .section2{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .myDivContainer{
+        display: flex;
+        flex-direction: column;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  button {
+    font-family: 'Matrix', sans-serif;
+    box-shadow: 2px 2px 5px 1px;
+    font-size: 30px;
+    color: #03A062;
+    background-color: black;
+  }
+  p{
+    font-family: "Algerian", sans-serif;
+    color: #03A062;
+  }
+}
