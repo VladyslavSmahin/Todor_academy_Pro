@@ -93,6 +93,7 @@ html p {
   color: #03A062;
 }
 html .bgImg {
+  object-fit: cover;
   position: absolute;
   left: 0;
   top: 0;
