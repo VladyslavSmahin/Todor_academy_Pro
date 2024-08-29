@@ -23,42 +23,102 @@ html {
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      h1,h3{
-        background-color: rgba(0,0,0,0.7);
+
+      h1, h3 {
+        background-color: rgba(0, 0, 0, 0.7);
       }
-      .popupToSelectNum{
-        form{
-          input{
-            background-color: rgba(0,0,0,1);
+
+      .popupToSelectNum {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        form {
+          input {
+            background-color: rgba(0, 0, 0, 1);
             color: #03A062;
             border-color: #03A062;
+
+            &::placeholder {
+              color: #03A062;
+            }
+          }
+        }
+      }
+
+      .popupToDeleteNum {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translate(-50%);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        form {
+          input {
+            background-color: rgba(0, 0, 0, 1);
+            color: #03A062;
+            border-color: #03A062;
+
+            &::placeholder {
+              color: #03A062;
+            }
           }
         }
       }
     }
-    .section2{
+
+    .section2 {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      .myDivContainer{
+
+      .myDivContainer {
         display: flex;
         flex-direction: column;
-        p{
+
+        p {
           margin: 0;
         }
+      }
+
+      .btnBg {
+        font-size: 15px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        transition: opacity 1s ease-in-out;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #03A062;
       }
     }
   }
 
-  button {
-    font-family: 'Matrix', sans-serif;
-    box-shadow: 2px 2px 5px 1px;
-    font-size: 30px;
+  .headerBtn {
     color: #03A062;
-    background-color: black;
+    max-width: 30px;
+    height: 80px;
+    margin-right: 100px;
   }
-  p{
+
+  .headerBtnBlue {
+    color: #03A062;
+    max-width: 30px;
+    height: 80px;
+  }
+
+  p {
     font-family: "Algerian", sans-serif;
     color: #03A062;
+  }
+
+  .bgImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
   }
 }
