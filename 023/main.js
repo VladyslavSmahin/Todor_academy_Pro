@@ -141,7 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleButtonClickBlue() {
         bgImg.src = 'images/bgImage.jpg';
         bgImg.classList.add('bgImg');
+        welcomeHomeText.classList.add('fade-in');
+
         setTimeout(() => {
+            welcomeHomeText.classList.add('show');
             welcomeHomeText.textContent = 'WELCOME HOME';
             welcomeHomeText.style.fontSize = '100px';
             headerBtn.style.display = 'none';
