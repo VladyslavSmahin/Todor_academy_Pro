@@ -1,0 +1,43 @@
+html {
+  background-color: black;
+  color: wheat;
+p{
+  color: wheat;
+}
+  body {
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .changeColorBtn {
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .text {
+        max-width: 80%;
+      }
+    }
+
+    .section2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section3{
+
+      .myUl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+          color: wheat;
+          list-style: none;
+        }
+
+      }
+
+    }
+  }
+}
