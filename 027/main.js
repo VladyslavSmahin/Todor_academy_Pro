@@ -28,4 +28,28 @@ fetchData(apiUrl)
     })
     .catch(err => {
         console.error(`Error: ${err}`)
+    });
+
+function randomReject() {
+    return new Promise((resolve, reject) => {
+        const randomOutcome = Math.random() > 0.5;
+
+        if (randomOutcome) {
+            let randomTimeout = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+
+            setTimeout(() => {
+               resolve( Math.random());
+            }, randomTimeout);
+        } else {
+            reject('Это фиаско,братан!');
+        }
     })
+}
+
+randomReject()
+    .then(value => console.log(`Promise resolved with :${value}`))
+    .catch(err => console.error(err));
+
+
+
+
