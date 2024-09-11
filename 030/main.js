@@ -20,3 +20,7 @@ const iterable = {
 for (let item of iterable){
     console.log(item);
 }
+
+for (let v of myObj ){
+    console.log(v)
+}
