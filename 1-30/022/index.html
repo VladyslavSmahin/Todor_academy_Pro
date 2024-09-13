@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Nasa news</a></li>
+            <li><a href="#section2">Music Player</a></li>
+            <li><a href="#section3">Canvas animation</a></li>
+            <li><a href="#section4">My location</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="section1" class="NasaContent">
+    <h1>NASA Image of the Day</h1>
+    <div id="content">
+        <h2 id="title"></h2>
+        <p id="date"></p>
+        <div id="media-container">
+
+        </div>
+        <p id="explanation"></p>
+    </div>
+</section>
+<section id="section2" class="mainSection">
+    <div>
+        <audio>
+            <source src="audio/Bullet%20For%20My%20Valentine%20-%20All%20These%20Things%20I%20Hate.mp3"  type="audio/mpeg">
+        </audio>
+        <audio>
+            <source src="audio/Bullet%20For%20My%20Valentine%20-%20Alone.mp3"  type="audio/mpeg">
+        </audio>
+        <audio>
+            <source src="audio/Bullet%20For%20My%20Valentine%20-%20Bittersweet%20Memories.mp3"  type="audio/mpeg">
+        </audio>
+        <audio>
+            <source src="audio/Bullet%20for%20My%20Valentine%20-%20Breaking%20Out,%20Breaking%20Down.mp3"  type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="songInfo">
+        <img class="audioImg" id="songImage" src="images/image1.jfif" alt="Album Art" />
+        <p id="songText"></p>
+    </div>
+    <div class="mainSectionPlayer">
+        <div class="volumeContainer">
+            <label for="volume"></label>
+            <input class="volume" type="range" name="volume" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+        <div class="mainSectionControls">
+            <button class="refresh">🔁</button>
+            <button class="previous">⏪</button>
+            <button class="pausePlay" onclick="toShowImg()"> ⏯ </button>
+            <button class="next">⏩</button>
+        </div>
+    </div>
+</section>
+<section  class="canvasSection">
+    <div id="section3" class="canvasContainer">
+        <canvas id="myCanvas"></canvas>
+    </div>
+</section>
+<section id="section4" class="myGeolocationSection">
+    <button id="getLocation">Get My Location</button>
+    <a id="locationDisplay" target="_blank" title="click here" >Location here</a>
+    <div id="map"></div>
+</section>
+<script src="main.js"></script>
+<script src="js/NASA.js"></script>
+<script src="js/canvasElement.js"></script>
+<script src="js/geolocation.js"></script>
+</body>
+</html>
