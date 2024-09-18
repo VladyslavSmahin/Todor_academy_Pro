@@ -24,15 +24,15 @@ const generateURL = (protocol, domain, path) => `${protocol}://${domain}/${path}
 console.log(generateURL('https', 'google.com', 'search'));
 
 const emphasize = (strings, ...values) => {
-    return strings.reduce((res, str, i) => {
+    let res = strings.reduce((res, str, i) => {
         res = res + str;
-        if (strings[i] === 'важливо') {
-            res +=  `<strong>${values[i]}</strong>`
-        } else if (values[i]) {
-            res +=  `<em>${values[i]}</em>`
-        } return res;
+        if (values[i]) {
+            res += `<em>${values[i]}</em>`;
+        }
+        return res;
     }, '')
-
+    return res.replace(/важливо/g, '<strong>важливо</strong>');
 }
 const newStr = emphasize`Що важливо, цей рік був останній для ${name}`;
 console.log(newStr);
+
