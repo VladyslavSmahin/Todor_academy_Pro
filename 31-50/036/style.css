@@ -1,0 +1,21 @@
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #232121;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .myForm {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+html label, html input, html button {
+  margin-bottom: 10px;
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
